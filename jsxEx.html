@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+     function createUi()
+     {
+        return(
+         <div>
+            <h2>REACT ELEMENT</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus harum voluptatem amet quis voluptatibus, labore quae consequatur excepturi ducimus totam molestiae placeat fugiat accusamus officiis nostrum accusantium earum, eum dignissimos cumque laborum? Facilis earum cumque quibusdam magnam a, sapiente et perferendis eveniet inventore sunt! Iusto, obcaecati iure culpa adipisci possimus eos id praesentium necessitatibus voluptatibus sunt repellat autem sint totam nostrum molestiae. At dolores, a amet vitae harum consequatur nobis quidem cum, est illo alias nam cumque? Nisi illum a et autem delectus perspiciatis accusamus, voluptatum neque voluptas, nostrum quas, saepe voluptate iusto! Corrupti, consequuntur. Numquam accusamus repellat quos doloribus.</p>
+            <button>React BUTTON</button>
+         </div>
+        );
+     }
+     function reuse()
+     {
+        return(
+            <div>
+            {createUi()}
+            {createUi()}
+            {createUi()}
+            </div>
+        )
+     }
+     ReactDOM.render(reuse(),document.getElementById("root"));
+    </script>
+</body>
+</html>

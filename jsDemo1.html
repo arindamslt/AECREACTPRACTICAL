@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeToH2()
+        {
+           var h2domRef=document.getElementById("h2dom");
+           h2domRef.innerText="DOM MANIPULATION USING JAVASCRIPT";
+        }
+        function changeToP()
+        {
+            var pdomRef=document.getElementById("pdom");
+            pdomRef.innerText="WELCOME DOM MANIPULATION";
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h2 id="h2dom" >DOM MANIPULATION</h2>
+        <p id="pdom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsum voluptas illo itaque mollitia. Fuga, id error consequatur tenetur ipsam quas ullam minima mollitia quod quis at, nobis nihil ea ab. Iste, excepturi repellendus. Atque voluptatem harum non facere quasi ipsum quia ab ea, sapiente consectetur, ratione nemo. Inventore nesciunt dicta quam ducimus modi alias illum placeat quas delectus aliquid fuga perspiciatis minima, amet accusamus enim at maiores asperiores voluptates? Est qui dicta animi! Reiciendis suscipit error, laboriosam molestiae totam et, fugiat, nam veritatis facilis tempora nostrum asperiores nobis debitis? Repellendus odio nam voluptatum quia iste, alias corrupti nostrum aliquid.</p>
+        <button onclick="changeToH2()">CHANGE DOM</button>
+        <button onclick="changeToP()">CHANGE PARA</button>
+    </div>
+</body>
+</html>

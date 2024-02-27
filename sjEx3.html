@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const createUi=(title)=>{
+            var buttonRef=document.createElement("button");
+            buttonRef.innerText=title;
+            document.querySelector("body").appendChild(buttonRef);
+
+        }
+        /*function createUi(title)
+        {
+            var buttonRef=document.createElement("button");
+            buttonRef.innerText=title;
+            document.querySelector("body").appendChild(buttonRef);
+        }*/
+        createUi("REACT");
+        createUi("ANGULAR");
+        createUi("VUEJS");
+    </script>
+
+</body>
+</html>

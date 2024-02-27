@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeH2()
+        {
+              var h2domRef=document.getElementById("h2dom");
+              h2domRef.innerText="DOM MANIPULATE BY JAVASCRIPT";
+        }
+        function changeP()
+        {
+            alert("HELLO");
+          pdomRef=document.getElementById("pdom");
+          pdomRef.innerText="WELCOME";
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h2 id="h2dom">DOM MANIPULATE</h2>
+        <p id="pdom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ipsum soluta, natus expedita corporis quo vero ducimus cumque, perspiciatis explicabo quibusdam ut quam repellat magni provident ipsam voluptate sequi. Molestias eligendi illum doloremque, natus totam explicabo atque labore repellat id quia alias sed reprehenderit ut deserunt, voluptate omnis earum tempore dolorum a ad libero culpa. Omnis in facilis suscipit distinctio culpa repellat nihil nam cumque deleniti! Rerum voluptatibus cum debitis magni ipsum ipsa odit ipsam odio tempore beatae rem nisi distinctio enim, fugit earum aspernatur perspiciatis ut reiciendis quae soluta? Repellendus sint quae consequatur cupiditate nesciunt, similique et ad. Eveniet!</p>
+        <button onclick="changeH2()">CHANGE DOM</button>
+        <button onclick="changeP()">CHANGE PARAGRAPH</button>
+    </div>
+</body>
+</html>

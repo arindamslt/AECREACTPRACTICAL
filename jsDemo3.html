@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<div>>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        const createUi=(title)=>{
+          var buttonRef=document.createElement("button");
+          buttonRef.innerText=title;
+        
+         // document.querySelector("body").appendChild(buttonRef);
+         document.getElementById("root").appendChild(buttonRef);
+        
+        }
+        const reuse=()=>{
+            createUi("VUE JS");
+           createUi("REACT JS");
+           createUi("ANGULAR");
+        }
+        reuse();
+      
+    </script>
+ 
+</body>
+</html>
